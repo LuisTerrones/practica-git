@@ -8,6 +8,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Document</title>
 </head>
 
@@ -40,26 +41,139 @@
               <th scope="col">NOMBRES</th>
               <th scope="col">APELLIDOS</th>
               <th scope="col">CORREOS </th>
+              <th scope="col">Modal</th>
             </tr>
           </thead>
           <tbody class="">
             <tr>
               <th scope="row">1</th>
-              <td>luis</td>
-              <td>terrones</td>
+              <td>Luis</td>
+              <td>Terrones</td>
               <td>teca@mdo</td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#luis-terrones">
+                  Información
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="luis-terrones" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header bg-black">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Luis Terrones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <center>
+                              <img src="img/batman.png" class="img-fluid" alt="img_zavala">
+                            </center>
+                          </div>
+                          <div class="col-md-6">
+                            <h4 class="mt-3">Nombre: Luis Terrones</h4>
+                            <div class="mt-4">
+                              <p>Edad: 20 años</p>
+                              <p>Estado: activo</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Jacob</td>
               <td>Thornton</td>
               <td>mer@fat</td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#jacob-thornton">
+                  Información
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="jacob-thornton" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header bg-black">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Jacob Thornton</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <center>
+                              <img src="img/capitan_america.png" class="img-fluid" alt="img_zavala">
+                            </center>
+                          </div>
+                          <div class="col-md-6">
+                            <h4 class="mt-3">Nombre: Jacob Thornton</h4>
+                            <div class="mt-4">
+                              <p>Edad: 21 años</p>
+                              <p>Estado: activo</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+              </td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Mateo</td>
-              <td>mrted</td>
+              <td>Sebastián</td>
+              <td>Reyes</td>
               <td>trat@twitter</td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#sebastian-reyes">
+                  Información
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="sebastian-reyes" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header bg-black">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Sebastián Reyes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <center>
+                              <img src="img/deadpool.png" class="img-fluid" alt="img_reyes">
+                            </center>
+                          </div>
+                          <div class="col-md-6">
+                            <h4 class="mt-3">Nombre: Sebastián Reyes</h4>
+                            <div class="mt-4">
+                              <p>Edad: 18 años</p>
+                              <p>Estado: activo</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+              </td>
             </tr>
           </tbody>
         </table>
